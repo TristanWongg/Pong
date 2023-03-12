@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6DD2E91429BE828400713CC8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DD2E91329BE828400713CC8 /* main.c */; };
+		6DD2E91429BE828400713CC8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DD2E91329BE828400713CC8 /* main.cpp */; };
 		6DD2E91629BE828400713CC8 /* raylib.entitlements in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6DD2E91529BE828400713CC8 /* raylib.entitlements */; };
 		6DD2E91829BE828400713CC8 /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD2E91729BE828400713CC8 /* libraylib.a */; };
 /* End PBXBuildFile section */
@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		6DD2E91029BE828400713CC8 /* Pong */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Pong; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DD2E91329BE828400713CC8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		6DD2E91329BE828400713CC8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6DD2E91529BE828400713CC8 /* raylib.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = raylib.entitlements; sourceTree = "<group>"; };
 		6DD2E91729BE828400713CC8 /* libraylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraylib.a; path = /usr/local/Cellar/raylib/4.2.0/lib/libraylib.a; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -63,7 +63,7 @@
 		6DD2E91229BE828400713CC8 /* Pong */ = {
 			isa = PBXGroup;
 			children = (
-				6DD2E91329BE828400713CC8 /* main.c */,
+				6DD2E91329BE828400713CC8 /* main.cpp */,
 				6DD2E91529BE828400713CC8 /* raylib.entitlements */,
 				6DD2E91729BE828400713CC8 /* libraylib.a */,
 			);
@@ -127,7 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DD2E91429BE828400713CC8 /* main.c in Sources */,
+				6DD2E91429BE828400713CC8 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +259,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Pong/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -267,6 +269,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Pong/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
